@@ -53,11 +53,12 @@ form {
 }
 
 #output {
-  border: 1px solid #000;
   max-width: 80%;
-  min-height: 100px;
+  min-height: 200px;
   margin: 50px auto;
   padding: 1rem;
+  background-color: #6e5203;
+  color: #f7f7f7;
 }
 
 /* Tablet */

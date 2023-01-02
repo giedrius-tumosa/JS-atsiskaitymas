@@ -11,7 +11,7 @@ Pastaba: atvaizdavimas turi būti matomas pateikus formą ir pateikiamas
 
 const form = document.querySelector("#form-weightCalc");
 const output = document.querySelector("#output");
-const outputParagraph = document.createElement("p");
+const outputParagraph = document.createElement("pre");
 output.append(outputParagraph);
 
 form.addEventListener("submit", (e) => {
@@ -25,16 +25,11 @@ form.addEventListener("submit", (e) => {
       weight_Kg / 0.0010000,
       weight_Kg * 35.274
     ];
-    const text = document.createTextNode(`
-      Jūsų svoris:
-      1. Svarais: ${weight_Lb.toFixed(1)}lb.
-      2. Gramais: ${weight_G.toFixed(1)}g.
-      3. Uncijomis: ${weight_Oz.toFixed(1)}oz.
+    const text = document.createTextNode(`Jūsų svoris:\n1. Svarais: ${weight_Lb.toFixed(1)}lb.\n2. Gramais: ${weight_G.toFixed(1)}g.\n3. Uncijomis: ${weight_Oz.toFixed(1)}oz.
     `);
     outputParagraph.append(text);
   } else {
-    const text = document.createTextNode(`Klaida: neatpažinti duomenys.
-    Susiekite su administratoriumi.`);
+    const text = document.createTextNode(`Klaida: neatpažinti duomenys.\nĮveskite iš naujo arba susiekite su \nadministratoriumi.`);
     outputParagraph.append(text);
   }
 })
