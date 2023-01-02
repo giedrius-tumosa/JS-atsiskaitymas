@@ -25,3 +25,7 @@ let getUserAverageAge = (array) => array
 
 
 let getUsersNames = (array) => array.map(el => el.name);
+
+
+console.log(getUserAverageAge(users));
+console.log(getUsersNames(users));
