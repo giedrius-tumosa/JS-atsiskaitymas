@@ -28,3 +28,5 @@ let filterAdults = (array) => {
   return array.filter(el => el.age >= 18);
 };
 
+console.log(filterDogOwners(users));
+console.log(filterAdults(users));
