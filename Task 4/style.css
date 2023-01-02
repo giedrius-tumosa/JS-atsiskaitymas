@@ -3,8 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-    'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial,
+    sans-serif;
 }
 
 /* Mobile first */
@@ -26,4 +26,37 @@
 .container h1 {
   margin-top: 50px;
   color: #333;
+}
+
+#output {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 320px);
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.carBrandCard {
+  border: 1px dashed black;
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 5px;
+  height: 200px;
+  overflow-y: scroll;
+}
+
+#output ul {
+  padding-left: 1rem;
+  columns: 2;
+  gap: 1rem;
+  font-size: 0.85rem;
+}
+
+.carBrand {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 1rem;
+  background-color: #0000ff;
+  color: #fff;
 }
